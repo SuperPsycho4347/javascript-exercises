@@ -28,12 +28,22 @@ const multiply = function(givenNums) {
   return product
 };
 
-const power = function() {
-	
+const power = function(myNum, numPower) {
+	let result = Math.pow(myNum, numPower)
+  return result
 };
 
-const factorial = function() {
-	
+const factorial = function(myNum) {
+	if (myNum === 0) {
+    return 1
+  }
+  else {
+    let factResult = 1
+    for (i = 1; i <= myNum; i++) {
+      factResult = factResult * i
+    }
+    return factResult
+  }
 };
 
 // Function calls
@@ -41,6 +51,8 @@ add(1, 2)
 subtract(1, 2)
 sum([1, 2])
 multiply([1,2])
+power(1, 2)
+factorial(4)
 
 // Do not edit below this line
 module.exports = {
