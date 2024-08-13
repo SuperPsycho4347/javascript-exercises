@@ -1,5 +1,8 @@
 const repeatString = function(myString, repeatInterval) {
-    if (repeatInterval === 0) {
+    if (myString == '') {
+        return ''
+    }
+    else if (repeatInterval === 0) {
         return ''
     }
     else if (repeatInterval <= 0) {
